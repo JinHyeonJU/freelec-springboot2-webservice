@@ -15,6 +15,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'com.h2database:h2' //인메모리 관계형 데이터베이스. 재시작때마다 초기화되므로 테스트용으로 주로 사용됨.
 }
 
 tasks.named('test') {
